@@ -6,3 +6,5 @@ var nystring = names.split(',').join(', ')
 
 //var result = names.filter('a')
 console.log(nystring)
+
+//tenker jeg må bruke filter her, men ikke sikker på hvordan.
