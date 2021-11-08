@@ -1,5 +1,4 @@
-
-
+//convert "2019-12-25T07:04:54.275Z"
 function convertDate(date) {
 
   const dateObject = new Date(date)
