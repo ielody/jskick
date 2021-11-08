@@ -1,10 +1,12 @@
 //remove names that starts with a
 
-const names = "anne,nils,guri,anders,martin"
+function getNames(names) {
 
-var nystring = names.split(',').join(', ')
+  return names.split(',').filter((name) => {
 
-//var result = names.filter('a')
-console.log(nystring)
+  return !name.startsWith('a')
 
-//tenker jeg må bruke filter her, men ikke sikker på hvordan.
+}).join(',')
+}
+var result = getNames("anne,nils,guri,anders,martin")
+console.log(result)
