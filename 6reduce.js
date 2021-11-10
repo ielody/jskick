@@ -1,7 +1,14 @@
-// values: [5,2,3,4,5,3,2,8,9,2] (Array)
 
-const values = [5,2,3,4,5,3,2,8,9,2]
-const reducer = (previousValue, currentValue) => previousValue + currentValue
+//Return the sum of all the numbers using reduce
+var values = [5,2,3,4,5,3,2,8,9,2]
+function sum(accumulator, currentValue) {
+  return accumulator + currentValue
+}
+let result = values.reduce(sum)
+console.log(result)
 
-console.log(values.reduce(reducer))
 // return: 43 (Number)
+
+//let values = [5,2,3,4,5,3,2,8,9,2]
+let answer = values.reduce((acc, cur) => acc + cur)
+console.log(answer)
