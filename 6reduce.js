@@ -9,6 +9,7 @@ console.log(result)
 
 // return: 43 (Number)
 
-//let values = [5,2,3,4,5,3,2,8,9,2]
+//ELLER kort svar
+
 let answer = values.reduce((acc, cur) => acc + cur)
 console.log(answer)
