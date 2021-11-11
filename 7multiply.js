@@ -1,7 +1,10 @@
-// values: [2,3,4,5,6,7] (Array)
+//Return the numbers multiplied
 
-const values = [2,3,4,5,6,7]
-const reducer = (previousValue, currentValue) => previousValue * currentValue
+var values = [2,3,4,5,6,7]
 
-console.log(values.reduce(reducer))
+function multiply(accumulator, currentValue) {
+    return accumulator * currentValue
+}
+let result = values.reduce(multiply)
+console.log(result)
 // return: 5040 (Number)
