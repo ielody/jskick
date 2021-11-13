@@ -1,6 +1,11 @@
 
+//Remove commas
+
 var string = "hei, på, deg"
-nystring = string.split(',').join('')
-console.log(nystring)
+
+function commas(string) {
+  return string.split(',').join('')
+}
+console.log(commas(string))
 
 
