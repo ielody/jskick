@@ -1,4 +1,4 @@
-//return five first numbers
+//return five first numbers using splice
 function getFiveNum(values) {
 return values.split(',').splice(0,5).join(', ')
 }
