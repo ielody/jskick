@@ -3,11 +3,11 @@
 
 var data = {"a":1,"b":2,"c":3}
 
-function delObj(data) {
+function changeObj(data) {
   data.b = 4
   return data
 }
 
-console.log(delObj(data))
+console.log(changeObj(data))
 
 // return: {"a":1,"b":4,"c":3} (Object)
