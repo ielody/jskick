@@ -1,14 +1,13 @@
 //til camelCase
 
-var string = "hello_we_are_all"
-/*function camel() {
-  return string.replaceAll(/(^|_)./g, s => s.slice(-1).toUpperCase()))
+var str = "hello_we_are_all"
+
+function camel(text) {
+  return str.toLowerCase()
+    .split('_')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ')
 }
-camel = console.log(string.replaceAll("_", " ").toUpperCase())*/
+console.log(camel(str))
 
-console.log(string.replace(/(^|_)./g, s => s.slice(-1).toUpperCase()))
-//console.log(string.slice().replace("_", " ").toUpperCase())
-//
-
-
-//Skal bli : Hello We Are All
+//return: Hello We Are All
