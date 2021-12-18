@@ -31,4 +31,15 @@ console.log(added)
 nums.forEach(num => sum += num)
 console.log(sum.toString())
 
+
+//while loop
+function whileLoop(nums) {
+var i = 0, sum = 0
+while(nums[i]) {
+    sum += nums[i++]
+    }
+    return sum.toString()
+}
+console.log(whileLoop(nums))
+
 // return: "44" (String)
